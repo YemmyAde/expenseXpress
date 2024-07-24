@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.lato {
+  font-family: Lato, "sans-serif";
+}
+
+.grotesk {
+  font-family: Schibsted Grotesk, "sans-serif";
+}
+
+.inter {
+  font-family: Inter, "sans-serif";
+}
+
+
+.activePage {
+  @apply bg-[#17c6a5] p-3 rounded-[14px] button-boxShadow
+}
+
+.tooltipText {
+  @apply absolute top-[-20px] rounded-[8px] z-[4] text-xs transition-all ease-in-out
+}
+
+.flex-center {
+  @apply flex
+}
+
+.menu {
+  @apply relative flex justify-center
+}
+
+body {
+  background-color: #f3f4f8;
+}
+
+.flip {
+  transform: rotateX(180deg);
+}
+
+.fixedHeader {
+  width: 100%;
+  max-width: 1740px;
+  min-width: 768px;
+}
+
+
+input:focus,
+input:active {
+  outline-style: none;
+}
+
+.button-boxShadow {
+  box-shadow: rgb(127, 215, 193) 0px 5px 15px;
+}
+
+.activeMenu {
+  border-radius: 8px;
+  background-color: #EBF3FD;
+}
+
+.child-absolute {
+  visibility: hidden;
+}
+
+
+.xAxis {
+  padding-right: 20px !important;
+}
+    .leftNav {
+      left: 0;
+    }
+
+/* .leftNav {
+  left: calc((100% - 1440px) /2);
+}
+
+.rightNav {
+  right: calc((100% - 1440px) /2);
+} */
+
+@media (max-width: 1440px) {
+
+
+  
+}
+/* 
+@media (max-width: 1024px) {
+  .rightNav {
+    right: -396px;
+  }
+} */
+
+
