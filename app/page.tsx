@@ -43,7 +43,7 @@ export default function Home() {
                     <div className="md:w-[40%]">
                         <p className="font-bold mb-7 text-4xl">Join 2 Million+ Members</p>
                         <p className="inter text-lg opacity-80">
-                            We've worked hard for the past 1 years saving our members over $1
+                            We have worked hard for the past 1 years saving our members over $1
                             billion dollars* and counting.
                         </p>
                     </div>

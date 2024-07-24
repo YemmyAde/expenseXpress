@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import React, { ReactNode, useEffect, useState } from "react";
+import React, { ReactNode, Suspense, useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
 import "remixicon/fonts/remixicon.css";
@@ -147,7 +147,9 @@ const Layout: React.FC<{
                 className=" text-[#fff] w-full min-h-[100vh] bg-[#f3f4f8] relative top-[50px]  md:pl-[200px]  pt-[30px]  
        overscroll-x-hidden box-border mb-[50px]  "
             >
-                <div className="w-[100%] max-w-[100%] px-[20px] md:px-[40px]">{children}</div>
+                <div className="w-[100%] max-w-[100%] px-[20px] md:px-[40px]">
+                    <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
+                </div>
             </div>
         </section>
     );

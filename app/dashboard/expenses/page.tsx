@@ -5,8 +5,6 @@ import { getExpenses } from "@/redux/features/expenseTracking/expenseTrackingSli
 import { useAppDispatch, useAppSelector } from "@/redux/hooks";
 import { useSearchParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
-
 type DataProps = {
     id: string;
     name: string;
@@ -23,7 +21,7 @@ const Page = () => {
     const [newExpense, setNewExpense] = useState<boolean>(false);
     const [data, setData] = useState<DataProps[]>([]);
 
-    const { gettingExpenses, gettingExpensesFailure, gettingExpensesSuccess } = useAppSelector(
+    const { gettingExpenses, gettingExpensesSuccess } = useAppSelector(
         (state) => state.expense
     );
 

@@ -21,6 +21,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/new/other", "redux/features/expenseTracking", "app/components/Calendar/Calendar.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/new/other", "redux/features/expenseTracking"],
   "exclude": ["node_modules"]
 }
