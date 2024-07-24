@@ -18,4 +18,4 @@ npm run dev or yarn install : if you are using Yarn
 
 This command will start the development server and open your application at http://localhost:3000.
 
-Deployment link to project
+Deployment link to project: https://expensexpress.vercel.app/
